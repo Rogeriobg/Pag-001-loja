@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+$background-color:#252525 !important;
+$font-color:#fff !important;
+$background-color2:#9f3001!important;
+
+.espaco{
+  background-color: $background-color;
+  color:$font-color;
+margin:20px;
+padding:20px;
+border-radius: 10px;
+}
+.espaco2{
+
+  color:#252525;
+margin:20px;
+padding:30px;
+border:2px solid white;
+border-radius: 10px;
+}
+.btn-size{
+  width:150px;
+
+margin-top: 10px;
+}
+.l{
+  margin:5px;
+}
+
+.m{
+
+margin-left: 610px !important;
+}
+.n{
+  width: 1460px;
+}
+.o{
+  margin-left: 5px;
+  border:1px solid white;
+}

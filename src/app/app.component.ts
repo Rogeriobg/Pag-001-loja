@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'pag-001';
+
+
+
+  loja_visivel: boolean = true;
+  stock_visivel: boolean = false;
+
+  MostrarLoja(){
+    this.loja_visivel = true;
+    this.stock_visivel = false;
+  }
+
+  MostrarStock(){
+    this.loja_visivel = false;
+    this.stock_visivel = true;
+  }
 }

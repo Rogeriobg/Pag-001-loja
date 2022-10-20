@@ -1,0 +1,38 @@
+<!-------------------LOJA-------------------------------------------->
+
+<div class="row panel panel default espaco">
+  <div class="row col-sm-6 col -xs-12">
+    <div>
+      <h3>Loja Rogério Geraldo</h3>
+      <h3>Cursando Desenvolvimento Full-Satch</h3>
+      <h4>Faculdade Estacio de sá Ourinhos SP</h4>
+    </div>
+  </div>
+
+  <div class="row">
+    <i *ngFor="let produto of produtos">
+      <div class="col-xs-3">
+        <img src="../assets/{{ produto.icon }}" /><span>{{
+          produto.nome
+        }}</span>
+      </div>
+    </i>
+  </div>
+</div>
+<br />
+
+<div class="row panel panel default espaco2 text-right">
+  <div>
+    <button (click)="AdicionarAbacaxi()" class="btn btn-secundary btn-size">
+      +Abacaxi
+    </button>
+    <button (click)="AdicionarBanana()" class="btn btn-secundary btn-size">
+      +Banana
+    </button>
+    <button (click)="AdicionarLaranja()" class="btn btn-secundary btn-size">
+      +Laranja
+    </button>
+
+    <app-socios [nome]="novo_nome"></app-socios>
+  </div>
+</div>
